@@ -28,7 +28,7 @@ export default function WidgetCard({
 
   return (
     <Link href={href} asChild>
-      <TouchableOpacity activeOpacity={0.8} style={[styles.card, { backgroundColor: theme.card, borderColor: theme.border }]}>
+      <TouchableOpacity activeOpacity={0.8} style={StyleSheet.flatten([styles.card, { backgroundColor: theme.card, borderColor: theme.border }])}>
         <View style={styles.header}>
           <View style={[styles.titleRow]}>
             <View style={[styles.iconContainer, { backgroundColor: accentColor + '20' }]}>
